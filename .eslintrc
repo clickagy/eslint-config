@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "generator-star-spacing": "off",
+    "no-debugger": "error",
+    "import/no-unresolved": "off",
+    "import/no-unassigned-import": "off",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-console": "off"
+  }
+}
