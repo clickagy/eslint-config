@@ -1,5 +1,5 @@
 {
   "root": true,
-  "extends": "./index.js",
+  "extends": "./base.js",
   "rules": {}
 }
