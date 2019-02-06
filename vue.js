@@ -3,13 +3,13 @@
 module.exports = {
   extends: [
     './base.js',
-    'plugin:vue/recommended'
+    'plugin:vue/recommended',
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   plugins: [
-    'vue'
+    'vue',
   ],
   rules: {
     'vue/max-attributes-per-line': [
@@ -18,16 +18,16 @@ module.exports = {
         singleline: 2,
         multiline: {
           max: 1,
-          allowFirstLine: false
-        }
-      }
+          allowFirstLine: false,
+        },
+      },
     ],
     'vue/component-name-in-template-casing': [
       'error',
       'kebab-case',
       {
-        ignores: []
-      }
+        ignores: [],
+      },
     ],
     'vue/html-indent': [
       'error',
@@ -37,8 +37,11 @@ module.exports = {
         baseIndent: 0,
         closeBracket: 0,
         alignAttributesVertically: true,
-        ignores: []
-      }
-    ]
-  }
+        ignores: [],
+      },
+    ],
+    'vue/no-parsing-error': ['error', {
+      'x-invalid-end-tag': false,
+    }],
+  },
 }

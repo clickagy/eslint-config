@@ -3,51 +3,46 @@
 [![npm (scoped with tag)](https://flat.badgen.net/npm/v/@clickagy/eslint-config)](https://npmjs.com/package/@clickagy/eslint-config)
 [![npm](https://flat.badgen.net/npm/dt/@clickagy/eslint-config)](https://npmjs.com/package/@clickagy/eslint-config)
 
+# Table of Contents
+   * [Installation](#installation)
+   * [Create an .eslintrc file](#create-an-eslintrc-file)
+      * [For simple babel projects](#for-simple-babel-projects)
+      * [For Vue projects](#for-vue-projects)
+      * [For Nuxt projects](#for-nuxt-projects)
 
-## Usage
+## Installation
 
-1. Add this package to your devDependencies
-
+Add this package and its peerDependencies to your devDependencies
 ```bash
-$ npm i --save-dev @clickagy/eslint-config
+npm i -D @clickagy/eslint-config eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
 ```
 
-2. Create a `.eslintrc` file
+Optionally, if using on a [Vue](https://vuejs.org/) or [Nuxt](https://nuxtjs.org/) project, also install `eslint-plugin-vue`
+```bash
+npm i -D eslint-plugin-vue
+```
+
+_______________________________
+
+## Create an `.eslintrc` file
+#### For simple babel projects
 ```json
 {
   "root": true,
-  "extends": []
+  "extends": ["@clickagy/eslint-config"]
 }
 ```
-
-3. Add the [`peerDependencies`](./package.json) to your project // TODO
-
-* Nuxt OR Vue project
-```bash
-$ npm i --save-dev ... // TODO
-```
-* Other JS project
-```bash
-$ npm i --save-dev ... // TODO
-```
-4. Extend our config:
-* Nuxt project
+#### For Vue projects
 ```json
-  "extends": [
-    "@clickagy"
-  ]
+{
+  "root": true,
+  "extends": ["@clickagy/eslint-config/vue"]
+}
 ```
-
-* Vue project
+#### For Nuxt projects
 ```json
-  "extends": [
-    "@clickagy/eslint-config/vue"
-  ]
-```
-
-* JS project
-```json
-  "extends": [
-    "@clickagy/eslint-config/base"
-  ]
+{
+  "root": true,
+  "extends": ["@clickagy/eslint-config/nuxt"]
+}
 ```
