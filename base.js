@@ -24,9 +24,20 @@ module.exports = {
     },
   },
   rules: {
+    // Allow async-await
     'generator-star-spacing': 'off',
+    // No async function without await
+    'require-await': 'error',
+    // Allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // Enforce import order
+    'import/order': 'error',
+    // Imports should come first
+    'import/first': 'error',
+    // Other import rules
+    'import/no-mutable-exports': 'error',
+    // Allow unresolved imports
     'import/no-unresolved': 'off',
     'import/no-unassigned-import': 'off',
     // Allow paren-less arrow functions only when there's no braces
