@@ -1,22 +1,14 @@
-'use strict';
-
-const fs = require('fs');
-const path = require('path');
-
-const baseConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '.eslintrc')))
+'use strict'
 
 module.exports = {
-  ...baseConfig,
   "extends": [
-    ...baseConfig.extends,
+    "./index.js",
     "plugin:vue/recommended"
   ],
   "plugins": [
-    ...baseConfig.plugins,
     "vue"
   ],
   "rules": {
-    ...baseConfig.rules,
     "vue/no-v-html": "off",
     "vue/max-attributes-per-line": [
       2,
