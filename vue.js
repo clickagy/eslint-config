@@ -40,6 +40,9 @@ module.exports = {
         alignAttributesVertically: true,
         ignores: []
       }
-    ]
+    ],
+    'vue/no-parsing-error': ['error', {
+      'x-invalid-end-tag': false
+    }],
   }
 }

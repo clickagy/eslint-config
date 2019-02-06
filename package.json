@@ -26,8 +26,9 @@
     "preaudit": "npm install --package-lock --package-lock-only",
     "audit": "npm audit",
     "postaudit": "rm package-lock.json",
-    "find-unused": "eslint-find-rules --unused",
-    "prepublish": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test)",
+    "find-unused": "eslint-find-rules -un",
+    "prepublish": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test && npm run find-unused)",
+    "release": "standard-version && git push --follow-tags && npm publish",
     "pretest": "editorconfig-tools check *",
     "test": "npm run --silent tests-only",
     "posttest": "npm run audit",
@@ -48,7 +49,8 @@
     "tape": "^4.9.1"
   },
   "peerDependencies": {
-    "eslint": ">= 5"
+    "eslint": ">=5.12.1",
+    "eslint-plugin-import": ">=2.16.0"
   },
   "engines": {
     "node": ">= 6"
