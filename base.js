@@ -1,25 +1,27 @@
 'use strict'
 
 module.exports = {
+  parser: 'babel-eslint',
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   extends: [
+    'standard',
     'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
   plugins: [
-    'import'
+    'import',
   ],
   settings: {
     'import/resolver': {
-      node: { extensions: ['.js', '.mjs'] }
-    }
+      node: { extensions: ['.js', '.mjs'] },
+    },
   },
   rules: {
     // Allow async-await
@@ -43,18 +45,15 @@ module.exports = {
     // Prefer const over let
     'prefer-const': ['error', {
       'destructuring': 'any',
-      'ignoreReadBeforeAssign': false
+      'ignoreReadBeforeAssign': false,
     }],
-    // No single if in an "else" block
+    // No single if in an 'else' block
     'no-lonely-if': 'error',
     // Force curly braces for control flow, including if blocks with a single statement
     curly: ['error', 'all'],
     // Force dot notation when possible
     'dot-notation': 'error',
     'no-var': 'error',
-    semi: [
-      'warn',
-      'never'
-    ],
-  }
+    'comma-dangle': ['error', 'always-multiline'],
+  },
 }
