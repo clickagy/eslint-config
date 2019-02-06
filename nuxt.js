@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    './vue.js',
+    './vue.js'
   ],
   rules: {}
 }
