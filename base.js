@@ -17,12 +17,12 @@ module.exports = {
   rules: {
     'generator-star-spacing': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/no-unresolved': 'off',
     'import/no-unassigned-import': 'off',
     semi: [
       'warn',
       'never'
     ],
-    'no-console': 'off'
   }
 }
