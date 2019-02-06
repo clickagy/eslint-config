@@ -12,7 +12,6 @@ module.exports = {
     'vue'
   ],
   rules: {
-    'vue/no-v-html': 'off',
     'vue/max-attributes-per-line': [
       'error',
       {
