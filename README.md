@@ -14,7 +14,7 @@
 
 Add this package and its peerDependencies to your devDependencies
 ```bash
-npm i -D @clickagy/eslint-config eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
+npm i -D @clickagy/eslint-config eslint babel-eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
 ```
 
 Optionally, if using on a [Vue](https://vuejs.org/) or [Nuxt](https://nuxtjs.org/) project, also install `eslint-plugin-vue`
