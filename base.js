@@ -10,8 +10,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'standard',
     'eslint:recommended',
+    'standard',
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
@@ -33,8 +33,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Enforce import order
     'import/order': 'error',
-    // Imports should come first
-    'import/first': 'error',
     // Other import rules
     'import/no-mutable-exports': 'error',
     // Allow unresolved imports
