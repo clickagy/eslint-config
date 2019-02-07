@@ -29,7 +29,7 @@ _______________________________
 ```json
 {
   "root": true,
-  "extends": ["@clickagy/eslint-config"]
+  "extends": ["@clickagy"]
 }
 ```
 #### For Vue projects
