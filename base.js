@@ -33,7 +33,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Enforce import order
     'import/order': 'error',
-    // Imports should come first	
+    // Imports should come first
     'import/first': 'error',
     // Other import rules
     'import/no-mutable-exports': 'error',
