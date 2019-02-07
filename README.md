@@ -46,3 +46,13 @@ _______________________________
   "extends": ["@clickagy/eslint-config/nuxt"]
 }
 ```
+
+_______________________________
+
+## Add lint and lintfix scripts to your package.json:
+```json
+"scripts": {
+  "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+  "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+}
+```
