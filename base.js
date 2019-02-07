@@ -10,8 +10,8 @@ module.exports = {
     node: true,
   },
   extends: [
-    'standard',
     'eslint:recommended',
+    'standard',
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
