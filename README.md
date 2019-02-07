@@ -9,6 +9,7 @@
       * [For simple babel projects](#for-simple-babel-projects)
       * [For Vue projects](#for-vue-projects)
       * [For Nuxt projects](#for-nuxt-projects)
+   * [Add lint and lintfix scripts to your package.json](#add-lint-and-lintfix-scripts-to-your-packagejson)
 
 ## Installation
 
@@ -44,5 +45,15 @@ _______________________________
 {
   "root": true,
   "extends": ["@clickagy/eslint-config/nuxt"]
+}
+```
+
+_______________________________
+
+## Add lint and lintfix scripts to your package.json
+```json
+"scripts": {
+  "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+  "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
 }
 ```
