@@ -11,11 +11,6 @@ All notable changes to this project will be documented in this file. See [standa
 * **vue:** move `parser: 'babel-eslint'` from base to index to prevent errors in vue linting ([1f9d3f0](https://github.com/clickagy/eslint-config/commit/1f9d3f0))
 
 
-### Reverts
-
-* chore(release): 1.0.4 ([c2219d7](https://github.com/clickagy/eslint-config/commit/c2219d7))
-
-
 
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/clickagy/eslint-config/compare/v1.0.2...v1.0.3) (2019-02-07)
