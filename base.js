@@ -12,8 +12,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'standard',
-    'plugin:import/errors',
-    'plugin:import/warnings',
+    'plugin:import/recommended',
   ],
   settings: {
     'import/resolver': {
