@@ -30,7 +30,7 @@
     "commitlint": "standard-commitlint",
     "find-unused": "eslint-find-rules -un",
     "prepublish": "! type safe-publish-latest >/dev/null 2>&1 || safe-publish-latest && in-install || (npm test && npm run find-unused)",
-    "release": "standard-version",
+    "release": "standard-version --release-as patch",
     "postrelease": "git push --follow-tags && npm publish",
     "release:major": "standard-version --release-as major && npm run postrelease",
     "release:minor": "standard-version --release-as minor && npm run postrelease",
