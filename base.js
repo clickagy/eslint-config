@@ -15,9 +15,6 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
-  plugins: [
-    'import',
-  ],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
