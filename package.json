@@ -58,7 +58,7 @@
     "safe-publish-latest": "^1.1.2",
     "semver": "^6.3.0",
     "standard-commit": "^3.0.2",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   },
   "peerDependencies": {
     "babel-eslint": ">=10.0.1",
